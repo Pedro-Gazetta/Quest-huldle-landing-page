@@ -1,6 +1,7 @@
-html{
+body{
     background: url(../images/bg-desktop.svg) center center no-repeat hsl(257, 40%, 49%);
     background-size: cover;
+    height: 100vh;
 }
 h1,h2{
     font-family: 'Poppins', sans-serif;
@@ -21,6 +22,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 47px 37px 0;
+    max-width: 1440px;
 }
 
 .main .info{
@@ -55,32 +57,22 @@ p{
     font-size: 18px;
     margin-top: 23px;
     transition: 0.3s;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, 0.555);
 }
 
 .main .info .btn:hover{
     color: #fff;
     background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
 }
 
-.footer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
-
-.footer .icons{
-    position: absolute;
-    right: 100px;
-    bottom: 50px;
-}
-
-.footer .icons a:hover i{
+.main .icons a:hover i{
     color: hsl(300, 69%, 71%);
     border: solid 1px hsl(300, 69%, 71%);
-
+    cursor: pointer;
 }
 
-.footer .icons a i{
+.main .icons a i{
     font-size: 20px;
     padding: 15px;
     border: solid 1px #fff;
@@ -91,8 +83,13 @@ p{
 
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
 .footer .attribution { 
-    margin-top: 10px;
+    align-self: flex-end;
     font-size: 11px; 
 
  }
