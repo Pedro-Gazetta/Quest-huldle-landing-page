@@ -1,0 +1,94 @@
+@media(max-width:1024px){
+   
+    .footer .icons{
+        left: auto;
+        right: auto;
+        bottom: 100px;
+    }
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .main .info .btn{
+        align-self: center;
+    }
+}
+
+@media (max-width:768px){
+    .main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .main .info{
+        margin-left: 13px;
+    }
+}
+
+@media(max-width:375px){
+    html{
+        background: url(../images/bg-mobile.svg) top center no-repeat hsl(257, 40%, 49%);
+        
+    }
+    
+    .header .logo{
+        max-width: 120px;
+        margin: 30px 37px 20px;
+
+    }
+
+    .main{
+        grid-template-rows: min-content 1fr;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .main .img{
+        max-height: 207px;
+    }
+    
+    .main .img img{
+        max-width: 246px;
+        
+    }
+
+    .main .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main .info h2{
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .main .info p{
+        font-size: 14px;
+    }
+
+    .main .info .btn{
+        padding: 10px 30px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .footer .icons{
+        position: unset;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    .footer .icons a i{
+        font-size: 15px;
+        padding: 10px;
+    }
+    
+}

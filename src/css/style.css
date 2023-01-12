@@ -1,0 +1,101 @@
+html{
+    background: url(../images/bg-desktop.svg) center center no-repeat hsl(257, 40%, 49%);
+    background-size: cover;
+}
+h1,h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.header .logo{
+    max-width: 212px;
+    margin: 35px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 47px 37px 0;
+}
+
+.main .info{
+    display: flex;
+    flex-direction: column;
+    margin-top: 43px;
+    margin-left: 53px;
+}
+
+.main .info h2{
+    font-weight: 600;
+    font-size: 40px;
+    color: #fff;
+}
+
+.main .info p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.main .info .btn{
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+    width: 200px;
+    height: 58px;
+    text-align: center;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    margin-top: 23px;
+    transition: 0.3s;
+}
+
+.main .info .btn:hover{
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .icons{
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+
+.footer .icons a:hover i{
+    color: hsl(300, 69%, 71%);
+    border: solid 1px hsl(300, 69%, 71%);
+
+}
+
+.footer .icons a i{
+    font-size: 20px;
+    padding: 15px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    color: #fff;
+    margin-left: 10px;
+    transition: 0.3s;
+
+}
+
+.footer .attribution { 
+    margin-top: 10px;
+    font-size: 11px; 
+
+ }
+.footer .attribution a{
+    color: hsl(228, 22%, 64%);
+     }
