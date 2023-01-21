@@ -1,7 +1,7 @@
 body{
     background: url(../images/bg-desktop.svg) center center no-repeat hsl(257, 40%, 49%);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 h1,h2{
     font-family: 'Poppins', sans-serif;
