@@ -1,6 +1,10 @@
 @media(max-width:1024px){
    
-    .footer .icons{
+    html{
+        height: 100%;
+    }
+
+    .main .icons{
         left: auto;
         right: auto;
         bottom: 100px;
@@ -17,12 +21,32 @@
 
 @media (max-width:768px){
     .main{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-areas:"img"
+                            "info"
+                            "icons" ;
+    } 
+
+    .main .img{
+        max-width: fit-content;
+        grid-area: img;
+    }
+
+    .main .img img{
+        max-width: 672px;
     }
 
     .main .info{
         margin-left: 13px;
+        grid-area: info;
+    }
+
+    .main .info .btn{
+        margin-top: 50px;
+    }
+
+    .main .icons{
+        grid-area: icons;
+        margin-bottom: 50px;
     }
 }
 
@@ -31,6 +55,13 @@
         background: url(../images/bg-mobile.svg) top center no-repeat hsl(257, 40%, 49%);
         
     }
+
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
     
     .header .logo{
         max-width: 120px;
@@ -40,12 +71,17 @@
 
     .main{
         grid-template-rows: min-content 1fr;
+        grid-template-columns: 1fr;
         margin-top: 30px;
         text-align: center;
+        grid-template-areas: "img"
+                            "info"
+                            "icons" ;
     }
 
     .main .img{
         max-height: 207px;
+        grid-area: img;
     }
     
     .main .img img{
@@ -57,6 +93,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        grid-area: info;
     }
 
     .main .info h2{
@@ -74,19 +111,16 @@
         text-align: center;
     }
 
-    .footer{
-        flex-direction: column;
-        align-items: center;
-    }
 
-
-    .footer .icons{
+    .main .icons{
+        grid-area: icons;
         position: unset;
         display: flex;
         margin-top: 30px;
+        margin-bottom: 30px;
     }
 
-    .footer .icons a i{
+    .main .icons a i{
         font-size: 15px;
         padding: 10px;
     }

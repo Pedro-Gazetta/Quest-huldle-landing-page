@@ -2,6 +2,7 @@ body{
     background: url(../images/bg-desktop.svg) center center no-repeat hsl(257, 40%, 49%);
     background-size: cover;
     height: 100%;
+    width: 100%;
 }
 h1,h2{
     font-family: 'Poppins', sans-serif;
@@ -91,16 +92,3 @@ p{
 
 }
 
-.footer{
-    display: flex;
-    justify-content: center;
-}
-
-.footer .attribution { 
-    align-self: flex-end;
-    font-size: 11px; 
-
- }
-.footer .attribution a{
-    color: hsl(228, 22%, 64%);
-     }
