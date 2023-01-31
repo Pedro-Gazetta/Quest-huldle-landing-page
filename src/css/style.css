@@ -23,7 +23,7 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr max-content 50px;
-    margin: 47px 37px 0;
+    margin: 0 auto ;
     max-width: 1440px;
 }
 
@@ -81,7 +81,7 @@ p{
     cursor: pointer;
 }
 
-.main .icons a i{
+/* .main .icons a i{
     font-size: 20px;
     padding: 15px;
     border: solid 2px #fff;
@@ -90,5 +90,18 @@ p{
     margin-left: 10px;
     transition: 0.3s;
 
+} */
+
+.main .icons a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    margin-left: 10px;
 }
+
 
