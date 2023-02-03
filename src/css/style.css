@@ -14,17 +14,31 @@ p{
     color: #fff;
 }
 
-.header .logo{
-    max-width: 212px;
-    margin: 35px;
-}
-
 .main{
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    grid-template-rows: 1fr max-content 50px;
+    grid-template-areas: "header header"
+                         "img info"
+                         "icons icons";
     margin: 0 auto ;
     max-width: 1440px;
+}
+
+.main .header{
+    grid-area: header;
+    }
+    
+    .main .header .logo{
+        max-width: 212px;
+        margin: 35px;
+    }
+
+.main .img{
+    grid-area: img;
+
+}
+
+.main .img img{
+    max-width: ;
 }
 
 .main .info{
@@ -32,6 +46,7 @@ p{
     flex-direction: column;
     margin-top: 43px;
     margin-left: 53px;
+    grid-area: info;
 }
 
 .main .info h2{
@@ -73,6 +88,7 @@ p{
     grid-column:span 2;
    display: flex;
     justify-content: flex-end;
+    grid-area: icons;
 }
 
 .main .icons a:hover i{
@@ -80,17 +96,6 @@ p{
     border: solid 1px hsl(300, 69%, 71%);
     cursor: pointer;
 }
-
-/* .main .icons a i{
-    font-size: 20px;
-    padding: 15px;
-    border: solid 2px #fff;
-    border-radius: 50%;
-    color: #fff;
-    margin-left: 10px;
-    transition: 0.3s
-
-} */
 
 .main .icons a i {
     display: flex;

@@ -1,21 +1,47 @@
-@media(max-width:1024px){
+@media(max-width:1074px){
    
     html{
-        height: 100%;
+        background: url(../images/bg-mobile.svg) top center no-repeat hsl(257, 40%, 49%);
+        height: 100vh;
     }
 
     .main .icons{
+        margin-right: 50px;
+        margin-top: 20px;
         left: auto;
         right: auto;
         bottom: 100px;
     }
     .main{
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
     }
 
     .main .info .btn{
         align-self: center;
+    }
+}
+
+@media(max-width:977px){
+    .main{
+        grid-template-areas:"header"
+                            "img"
+                            "info"
+                            "icons" ;
+    } 
+
+    .main .img{
+        text-align: center;
+    }
+
+    .main .info{
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .main .icons{
+        justify-content: center;
+        margin-right: 0;
+        margin-bottom: 30px;
     }
 }
 
@@ -26,10 +52,12 @@
     }
     
     .main{
-        grid-template-areas:"img"
+        grid-template-areas:"header"
+                            "img"
                             "info"
                             "icons" ;
     } 
+
 
     .main .img{
         max-width: fit-content;
@@ -51,9 +79,20 @@
 
     .main .icons{
         grid-area: icons;
+        margin-top: 50px;
         margin-bottom: 50px;
         justify-content: center;
     }
+}
+
+@media(max-width:614px){
+
+    .main .img{
+        max-width: 600px;
+    }
+     .main .img img{
+        max-width: 100%;
+     }
 }
 
 @media(max-width:375px){
@@ -80,14 +119,20 @@
         grid-template-columns: 1fr;
         margin-top: 30px;
         text-align: center;
-        grid-template-areas: "img"
+        grid-template-areas:"header" 
+                            "img"
                             "info"
                             "icons" ;
     }
 
     .main .img{
-        max-height: 207px;
+        max-width: 100%;
+        text-align: center;
         grid-area: img;
+    }
+
+    .main .img img{
+        max-height: 207px;
     }
     
     .main .img img{
