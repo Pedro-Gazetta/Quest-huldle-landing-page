@@ -37,9 +37,6 @@ p{
 
 }
 
-.main .img img{
-    max-width: ;
-}
 
 .main .info{
     display: flex;
@@ -84,6 +81,8 @@ p{
 }
 
 .main .icons{
+    margin-bottom: 50px;
+    margin-right: 100px;
     grid-row: 2;
     grid-column:span 2;
    display: flex;
